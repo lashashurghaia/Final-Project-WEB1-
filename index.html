@@ -1,0 +1,676 @@
+<!doctype html>
+<html lang="ka">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link class="page__style" rel="stylesheet" href="css/style.css" />
+    <title>ფინანსების შესახებ - კავკასიის ბანკი</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__top">
+          <nav class="header__nav">
+            <ul class="header__list">
+              <li class="header__item">
+                <a class="header__link header__link--active" href="index.html"
+                  >კავკასიის ბანკი</a
+                >
+              </li>
+              <li class="header__item">
+                <a class="header__link" href="saved.html">შენახულები</a>
+              </li>
+              <li class="header__item">
+                <a class="header__link" href="login.html">ავტორიზაცია</a>
+              </li>
+              <li class="header__item">
+                <a class="header__link" href="#">ბიზნესი</a>
+              </li>
+              <li class="header__item">
+                <a class="header__link" href="#">ახალგაზრდული</a>
+              </li>
+              <li class="header__item">
+                <a class="header__link" href="#">კავკასია Pay</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="header__bottom">
+          <a
+            class="header__logo"
+            href="#"
+            aria-label="მთავარ გვერდზე დაბრუნება"
+          >
+            <svg class="header__image" width="70" height="70">
+              <use href="img/sprite.svg#Cu-logo"></use>
+            </svg>
+          </a>
+          <div class="header__bottom-right">
+            <div class="header__buttons">
+              <a class="header__button" href="login.html">გახდი კლიენტი</a>
+              <button
+                class="header__button header__button--qr"
+                type="button"
+                aria-label="აპლიკაციის ჩამოტვირთვა"
+              >
+                <svg
+                  class="header__icon"
+                  width="20"
+                  height="20"
+                  aria-hidden="true"
+                >
+                  <use xlink:href="img/sprite.svg#icon-qr"></use>
+                </svg>
+              </button>
+            </div>
+            <button
+              class="header__button header__button--burger"
+              aria-label="მენიუ"
+            >
+              <svg class="header__burger-icon" width="32" height="32">
+                <use href="./img/sprite.svg#icon-burger"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="pro-finance" aria-labelledby="main-heading">
+        <div class="container">
+          <h1 id="main-heading" class="visually-hidden">
+            კავკასიის ბანკი ფინანსების შესახებ
+          </h1>
+          <div class="pro-finance__wrapper">
+            <aside class="sidebar">
+              <h2 class="sidebar__heading">
+                ფინანსური ანალიტიკა ხელმისაწვდომი ენით
+              </h2>
+
+              <div class="sidebar__search-box">
+                <input
+                  type="text"
+                  id="search-input"
+                  placeholder="მოძებნე სტატია"
+                  class="sidebar__search-input"
+                />
+              </div>
+
+              <p class="sidebar__text">კატეგორიები</p>
+              <button class="sidebar__button" type="button">
+                ყველა კატეგორიის ჩვენება
+              </button>
+
+              <div class="sidebar__categories categories">
+                <nav class="categories__nav">
+                  <ul class="categories__list">
+                    <li class="categories__item">
+                      <a class="categories__link" href="#">
+                        <img
+                          class="categories__image"
+                          src="./img/icon-credit.png"
+                          width="40"
+                          height="40"
+                          alt="კრედიტების კატეგორია"
+                        />
+                        <span class="categories__link-text">კრედიტები</span>
+                      </a>
+                    </li>
+                    <li class="categories__item">
+                      <a class="categories__link" href="#">
+                        <img
+                          class="categories__image"
+                          src="./img/icon-cards.png"
+                          width="40"
+                          height="40"
+                          alt="ბარათების კატეგორია"
+                        />
+                        <span class="categories__link-text">ბარათები</span>
+                      </a>
+                    </li>
+                    <li class="categories__item">
+                      <a class="categories__link" href="#">
+                        <img
+                          class="categories__image"
+                          src="./img/icon-invest.png"
+                          width="40"
+                          height="40"
+                          alt="ინვესტიციების კატეგორია"
+                        />
+                        <span class="categories__link-text">ინვესტიციები</span>
+                      </a>
+                    </li>
+                    <li class="categories__item">
+                      <a class="categories__link" href="#">
+                        <img
+                          class="categories__image"
+                          src="./img/icon-mortgage.png"
+                          width="40"
+                          height="40"
+                          alt="იპოთეკის კატეგორია"
+                        />
+                        <span class="categories__link-text">იპოთეკა</span>
+                      </a>
+                    </li>
+                    <li class="categories__item">
+                      <a class="categories__link" href="#">
+                        <img
+                          class="categories__image"
+                          src="./img/icon-deposit.png"
+                          width="40"
+                          height="40"
+                          alt="ანაბრების კატეგორია"
+                        />
+                        <span class="categories__link-text"
+                          >ანაბრები და ანგარიშები</span
+                        >
+                      </a>
+                    </li>
+                    <li class="categories__item">
+                      <a class="categories__link" href="#">
+                        <img
+                          class="categories__image"
+                          src="./img/icon-transfer.png"
+                          width="40"
+                          height="40"
+                          alt="გზავნილების კატეგორია"
+                        />
+                        <span class="categories__link-text">გზავნილები</span>
+                      </a>
+                    </li>
+                    <li class="categories__item">
+                      <a class="categories__link" href="#">
+                        <img
+                          class="categories__image"
+                          src="./img/icon-safety.png"
+                          width="40"
+                          height="40"
+                          alt="უსაფრთხოების კატეგორია"
+                        />
+                        <span class="categories__link-text">უსაფრთხოება</span>
+                      </a>
+                    </li>
+                    <li class="categories__item">
+                      <a class="categories__link" href="#">
+                        <img
+                          class="categories__image"
+                          src="./img/icon-lifestyle.png"
+                          width="40"
+                          height="40"
+                          alt="ლაიფსტაილის კატეგორია"
+                        />
+                        <span class="categories__link-text">ლაიფსტაილი</span>
+                      </a>
+                    </li>
+                    <li class="categories__item">
+                      <a class="categories__link" href="#">
+                        <img
+                          class="categories__image"
+                          src="./img/icon-innovations.png"
+                          width="40"
+                          height="40"
+                          alt="ინოვაციების კატეგორია"
+                        />
+                        <span class="categories__link-text">ინოვაციები</span>
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+
+              <span class="sidebar__share">გაზიარება:</span>
+              <ul class="sidebar__socials socials">
+                <li class="socials__item">
+                  <a
+                    class="socials__link"
+                    href="#"
+                    aria-label="გადადი ტელეგრამის გვერდზე"
+                  >
+                    <svg
+                      class="socials__icon"
+                      width="15"
+                      height="12"
+                      aria-hidden="true"
+                    >
+                      <use xlink:href="img/sprite.svg#icon-tg"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="socials__item">
+                  <a
+                    class="socials__link"
+                    href="#"
+                    aria-label="გადადი ფეისბუქის გვერდზე"
+                  >
+                    <svg
+                      class="socials__icon"
+                      width="16"
+                      height="16"
+                      aria-hidden="true"
+                    >
+                      <use xlink:href="img/sprite.svg#icon-vk"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="socials__item">
+                  <a
+                    class="socials__link"
+                    href="#"
+                    aria-label="გადადი ინსტაგრამის გვერდზე"
+                  >
+                    <svg
+                      class="socials__icon"
+                      width="14"
+                      height="14"
+                      aria-hidden="true"
+                    >
+                      <use xlink:href="img/sprite.svg#icon-ok"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+              <p class="sidebar__copyright">
+                &copy;&nbsp;1995-2026, სს „კავკასიის ბანკი“. ყველა უფლება
+                დაცულია.
+              </p>
+            </aside>
+
+            <ul id="articles-container" class="articles">
+              <li class="articles__item articles__item--size-xl">
+                <div class="card-news card-news--size-xl" data-id="1">
+                  <div class="card-news__box">
+                    <picture>
+                      <source
+                        media="(max-width:767px)"
+                        srcset="
+                          ./img/cover-debit-mobile.png    1x,
+                          ./img/cover-debit-mobile@2x.png 2x
+                        "
+                      />
+                      <img
+                        class="card-news__image"
+                        src="./img/cover-debit-desktop.png"
+                        width="340"
+                        height="240"
+                        alt="სტატიის ილუსტრაცია"
+                      />
+                    </picture>
+                  </div>
+
+                  <div class="card-news__content">
+                    <div class="card-news__info">
+                      <span class="card-news__date">6 აპრილი, 2023</span>
+                      <span class="card-news__views">
+                        <span class="card-news__count">1.2კ</span>
+                        <svg
+                          class="card-news__icon"
+                          width="16"
+                          height="16"
+                          aria-hidden="true"
+                        >
+                          <use xlink:href="img/sprite.svg#icon-eye"></use>
+                        </svg>
+                      </span>
+                      <span class="card-news__time">
+                        <span class="card-news__count">5 წუთი</span>
+                        <svg
+                          class="card-news__icon"
+                          width="16"
+                          height="16"
+                          aria-hidden="true"
+                        >
+                          <use xlink:href="img/sprite.svg#icon-time"></use>
+                        </svg>
+                      </span>
+                      <button
+                        class="card-news__save-btn"
+                        aria-label="სტატიის შენახვა"
+                      >
+                        სტატიის შენახვა
+                      </button>
+                    </div>
+                    <h3 class="card-news__heading">რა არის სადებეტო ბარათი</h3>
+                    <p class="card-news__text">
+                      სადებეტო ბარათი — ეს არის საბანკო პროდუქტი, რომელიც
+                      საშუალებას გაძლევთ შეინახოთ და დახარჯოთ საკუთარი ფული.
+                      თქვენი თანხა ინახება ანგარიშზე, რომელიც...
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="articles__item">
+                <div class="card-news" data-id="2">
+                  <div class="card-news__box">
+                    <picture>
+                      <source
+                        media="(max-width:767px)"
+                        srcset="
+                          ./img/cover-decline-mobile.png    1x,
+                          ./img/cover-decline-mobile@2x.png 2x
+                        "
+                      />
+                      <img
+                        class="card-news__image"
+                        src="./img/cover-decline-desktop.png"
+                        width="340"
+                        height="190"
+                        alt="სტატიის ილუსტრაცია"
+                      />
+                    </picture>
+                  </div>
+
+                  <div class="card-news__content">
+                    <div class="card-news__info">
+                      <span class="card-news__date">13 თებერვალი, 2023</span>
+                      <span class="card-news__views">
+                        <span class="card-news__count">81.1კ</span>
+                        <svg
+                          class="card-news__icon"
+                          width="16"
+                          height="16"
+                          aria-hidden="true"
+                        >
+                          <use xlink:href="img/sprite.svg#icon-eye"></use>
+                        </svg>
+                      </span>
+                      <span class="card-news__time">
+                        <span class="card-news__count">5 წუთი</span>
+                        <svg
+                          class="card-news__icon"
+                          width="16"
+                          height="16"
+                          aria-hidden="true"
+                        >
+                          <use xlink:href="img/sprite.svg#icon-time"></use>
+                        </svg>
+                      </span>
+                      <button
+                        class="card-news__save-btn"
+                        aria-label="სტატიის შენახვა"
+                      >
+                        სტატიის შენახვა
+                      </button>
+                    </div>
+                    <h3 class="card-news__heading">
+                      რატომ შეიძლება ბანკმა უარი თქვას კრედიტზე
+                    </h3>
+                    <p class="card-news__text">
+                      თუ ბანკმა სესხი არ დაგიმტკიცათ, არ ღირს მაშინვე სხვა
+                      ბანკში ან მიკროსაფინანსო ორგანიზაციაში განაცხადის შეტანა:
+                      უმჯობესია...
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="articles__item">
+                <div class="card-news" data-id="3">
+                  <div class="card-news__box">
+                    <picture>
+                      <source
+                        media="(max-width:767px)"
+                        srcset="
+                          ./img/cover-sbp-mobile.png    1x,
+                          ./img/cover-sbp-mobile@2x.png 2x
+                        "
+                      />
+                      <img
+                        class="card-news__image"
+                        src="./img/cover-sbp-desktop.png"
+                        width="340"
+                        height="190"
+                        alt="სტატიის ილუსტრაცია"
+                      />
+                    </picture>
+                  </div>
+
+                  <div class="card-news__content">
+                    <div class="card-news__info">
+                      <span class="card-news__date">8 აგვისტო, 2022</span>
+                      <span class="card-news__views">
+                        <span class="card-news__count">21.9კ</span>
+                        <svg
+                          class="card-news__icon"
+                          width="16"
+                          height="16"
+                          aria-hidden="true"
+                        >
+                          <use xlink:href="img/sprite.svg#icon-eye"></use>
+                        </svg>
+                      </span>
+                      <span class="card-news__time">
+                        <span class="card-news__count">8 წუთი</span>
+                        <svg
+                          class="card-news__icon"
+                          width="16"
+                          height="16"
+                          aria-hidden="true"
+                        >
+                          <use xlink:href="img/sprite.svg#icon-time"></use>
+                        </svg>
+                      </span>
+                      <button
+                        class="card-news__save-btn"
+                        aria-label="სტატიის შენახვა"
+                      >
+                        სტატიის შენახვა
+                      </button>
+                    </div>
+                    <h3 class="card-news__heading">
+                      როგორ მუშაობს სწრაფი გადახდების სისტემა
+                    </h3>
+                    <p class="card-news__text">
+                      სწრაფი გადახდების სისტემა საშუალებას გაძლევთ ონლაინ
+                      რეჟიმში გადარიცხოთ ფული სხვადასხვა ბანკის კლიენტებს შორის
+                      ნომრის...
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="articles__item articles__item--size-xl">
+                <div class="card-news card-news--size-xl" data-id="4">
+                  <div class="card-news__box">
+                    <picture>
+                      <source
+                        media="(max-width:767px)"
+                        srcset="
+                          ./img/cover-transfer-mobile.png    1x,
+                          ./img/cover-transfer-mobile@2x.png 2x
+                        "
+                      />
+                      <img
+                        class="card-news__image"
+                        src="./img/cover-transfer-desktop.png"
+                        width="340"
+                        height="240"
+                        alt="სტატიის ილუსტრაცია"
+                      />
+                    </picture>
+                  </div>
+
+                  <div class="card-news__content">
+                    <div class="card-news__info">
+                      <span class="card-news__date">25 ნოემბერი, 2022</span>
+                      <span class="card-news__views">
+                        <span class="card-news__count">12.8კ</span>
+                        <svg
+                          class="card-news__icon"
+                          width="16"
+                          height="16"
+                          aria-hidden="true"
+                        >
+                          <use xlink:href="img/sprite.svg#icon-eye"></use>
+                        </svg>
+                      </span>
+                      <span class="card-news__time">
+                        <span class="card-news__count">3 წუთი</span>
+                        <svg
+                          class="card-news__icon"
+                          width="16"
+                          height="16"
+                          aria-hidden="true"
+                        >
+                          <use xlink:href="img/sprite.svg#icon-time"></use>
+                        </svg>
+                      </span>
+                      <button
+                        class="card-news__save-btn"
+                        aria-label="სტატიის შენახვა"
+                      >
+                        სტატიის შენახვა
+                      </button>
+                    </div>
+                    <h3 class="card-news__heading">
+                      როგორ დავზოგოთ ბანკთაშორის გადარიცხვებზე
+                    </h3>
+                    <p class="card-news__text">
+                      სხვა ბანკში თანხის გადარიცხვა შესაძლებელია ტელეფონის,
+                      ბარათის ან ანგარიშის ნომრით. როგორც წესი, ასეთ
+                      გადარიცხვებზე საკომისიო მოქმედებს, მაგრამ...
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="articles__item">
+                <div class="card-news" data-id="5">
+                  <div class="card-news__box">
+                    <picture>
+                      <source
+                        media="(max-width:767px)"
+                        srcset="
+                          ./img/cover-cashback-mobile.png    1x,
+                          ./img/cover-cashback-mobile@2x.png 2x
+                        "
+                      />
+                      <img
+                        class="card-news__image"
+                        src="./img/cover-cashback-desktop.png"
+                        width="340"
+                        height="190"
+                        alt="სტატიის ილუსტრაცია"
+                      />
+                    </picture>
+                  </div>
+
+                  <div class="card-news__content">
+                    <div class="card-news__info">
+                      <span class="card-news__date">11 აგვისტო, 2022</span>
+                      <span class="card-news__views">
+                        <span class="card-news__count">8.4კ</span>
+                        <svg
+                          class="card-news__icon"
+                          width="16"
+                          height="16"
+                          aria-hidden="true"
+                        >
+                          <use xlink:href="img/sprite.svg#icon-eye"></use>
+                        </svg>
+                      </span>
+                      <span class="card-news__time">
+                        <span class="card-news__count">7 წუთი</span>
+                        <svg
+                          class="card-news__icon"
+                          width="16"
+                          height="16"
+                          aria-hidden="true"
+                        >
+                          <use xlink:href="img/sprite.svg#icon-time"></use>
+                        </svg>
+                      </span>
+                      <button
+                        class="card-news__save-btn"
+                        aria-label="სტატიის შენახვა"
+                      >
+                        სტატიის შენახვა
+                      </button>
+                    </div>
+                    <h3 class="card-news__heading">
+                      ქეშბექი: როგორ მუშაობს და რა არის სარგებელი
+                    </h3>
+                    <p class="card-news__text">
+                      ქეშბექი მარტივი ენით — ეს არის ბანკისგან მიღებული ჯილდო
+                      სადებეტო და საკრედიტო ბარათებით შენაძენის გადახდისთვის.
+                      ნაწილი...
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="articles__item">
+                <div class="card-news" data-id="6">
+                  <div class="card-news__box">
+                    <picture>
+                      <source
+                        media="(max-width:767px)"
+                        srcset="
+                          ./img/cover-percent-mobile.png    1x,
+                          ./img/cover-percent-mobile@2x.png 2x
+                        "
+                      />
+                      <img
+                        class="card-news__image"
+                        src="./img/cover-percent-desktop.png"
+                        width="340"
+                        height="190"
+                        alt="სტატიის ილუსტრაცია"
+                      />
+                    </picture>
+                  </div>
+
+                  <div class="card-news__content">
+                    <div class="card-news__info">
+                      <span class="card-news__date">18 იანვარი, 2022</span>
+                      <span class="card-news__views">
+                        <span class="card-news__count">6.5კ</span>
+                        <svg
+                          class="card-news__icon"
+                          width="16"
+                          height="16"
+                          aria-hidden="true"
+                        >
+                          <use xlink:href="img/sprite.svg#icon-eye"></use>
+                        </svg>
+                      </span>
+                      <span class="card-news__time">
+                        <span class="card-news__count">5 წუთი</span>
+                        <svg
+                          class="card-news__icon"
+                          width="16"
+                          height="16"
+                          aria-hidden="true"
+                        >
+                          <use xlink:href="img/sprite.svg#icon-time"></use>
+                        </svg>
+                      </span>
+                      <button
+                        class="card-news__save-btn"
+                        aria-label="სტატიის შენახვა"
+                      >
+                        სტატიის შენახვა
+                      </button>
+                    </div>
+                    <h3 class="card-news__heading">
+                      როგორ ერიცხება პროცენტი შემნახველ ანგარიშს
+                    </h3>
+                    <p class="card-news__text">
+                      შემნახველი ანგარიშები სხვადასხვანაირად მუშაობს: მაგალითად,
+                      ზოგიერთზე პროცენტი შეიძლება დაერიცხოს მინიმალურ ნაშთს...
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>
