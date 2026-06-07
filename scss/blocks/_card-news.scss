@@ -1,0 +1,182 @@
+.card-news {
+  display: flex;
+  flex-direction: column;
+  border-radius: 16px;
+  outline: none;
+  text-decoration: none;
+  color: inherit;
+  height: 100%; 
+
+  &--size-xl {
+    flex-direction: row;
+    background-color: $color-solitude-2;
+    overflow: hidden;
+
+    @include vp-767 {
+      flex-direction: column;
+      background-color: transparent;
+    }
+
+    .card-news__box {
+      width: 340px; 
+      height: auto;
+      aspect-ratio: auto; 
+      align-self: stretch; 
+      border-radius: 16px 0 0 16px;
+
+      @include vp-767 {
+        width: 100%;
+        aspect-ratio: 340 / 190; 
+        border-radius: 16px;
+      }
+    }
+
+    .card-news__content {
+      padding: 24px 32px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; 
+      flex: 1;
+      
+      @include vp-767 {
+        padding: 12px 0 0 0;
+      }
+    }
+  }
+
+
+  &__box {
+    position: relative;
+    flex-shrink: 0;
+    border-radius: 16px;
+    overflow: hidden;
+    width: 100%;
+    aspect-ratio: 340 / 190; 
+
+    picture,
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover; 
+    }
+
+    &::before {
+      content: "სტატიის წაკითხვა";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.45);
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 15px;
+      line-height: 20px;
+      font-weight: 500;
+      opacity: 0;
+      transition: opacity 0.2s ease;
+      z-index: 1;
+    }
+
+    &:hover::before,
+    &:focus-within::before {
+      opacity: 1;
+    }
+  }
+
+
+  &__content {
+    padding: 16px 0 0 0; 
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+
+ 
+  &__info {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin: 0 0 12px 0;
+    color: $color-storm-grey;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1;
+    width: 100%;
+
+    @include vp-767 {
+      font-size: 12px;
+      gap: 10px;
+      margin: 0 0 8px 0;
+    }
+  }
+
+  &__views,
+  &__time {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    white-space: nowrap;
+  }
+
+  &__icon {
+    flex-shrink: 0;
+    fill: currentColor;
+  }
+
+ 
+  &__save-btn {
+    margin-left: auto;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    font-size: 13px;
+    font-weight: 500;
+    color: #8da1f7;
+    white-space: nowrap; 
+    transition: color 0.2s ease; 
+
+    @include vp-767 {
+      font-size: 12px;
+    }
+
+    &:hover,
+    &:focus {
+      color: $color-royal-blue; 
+    }
+
+    &--active {
+      color: $color-royal-blue;
+    }
+  }
+
+  &__heading {
+    margin: 0 0 8px 0;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.3;
+    transition: color 0.2s ease;
+
+    @include vp-767 {
+      font-size: 16px;
+      margin: 0 0 6px 0;
+    }
+  }
+
+  &:hover &__heading,
+  &:focus-within &__heading {
+    color: $color-royal-blue;
+  }
+
+  &__text {
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.4;
+    color: #333333;
+
+    @include vp-767 {
+      font-size: 14px;
+    }
+  }
+}
