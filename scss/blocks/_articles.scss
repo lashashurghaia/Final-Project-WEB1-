@@ -1,0 +1,21 @@
+.articles {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px 32px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  @include vp-767 {
+    display: grid;
+    grid-template-columns: 345px;
+    gap: 10px;
+  }
+
+  &__item {
+    display: flex;
+
+    &--size-xl {
+      grid-column: 1 / -1;
+    }
+  }
+}
