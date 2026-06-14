@@ -3,153 +3,73 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <title>რეგისტრაცია - კავკასიის ბანკი ბიზნეს-ონლაინი</title>
+    <title>რეგისტრაცია</title>
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
-
   <body>
     <header class="header">
       <div class="header__wrapper">
         <div class="header__left">
-          <a href="login.html" class="header__logo"> </a>
+          <a
+            class="header__logo"
+            href="#"
+            aria-label="მთავარ გვერდზე დაბრუნება"
+          >
+            <svg class="header__image" width="70" height="70">
+              <use href="img/sprite.svg#Cu-logo"></use>
+            </svg>
+          </a>
         </div>
         <div class="header__right">
           <span class="header__text"
-            >ტოპ-3 საუკეთესო ბანკი კორპორატიული კლიენტებისთვის Markswebb-ის
-            ვერსიით</span
+            >საიმედო ფინანსური პარტნიორი განათლებისა და ბიზნესისთვის</span
           >
         </div>
       </div>
     </header>
-    <section class="main">
-      <div class="registration-banner">
-        <h1 class="visually-hidden">Registration Page</h1>
-        <div class="registration-banner__wrapper">
-          <h2 class="registration-banner__header">რეგისტრაცია</h2>
-          <div class="registration-banner__form">
-            <input
-              class="registration-banner__input"
-              type="text"
-              placeholder="გვარი"
-              name="last_name"
-            />
-            <input
-              class="registration-banner__input registration-banner__input--short"
-              type="text"
-              placeholder="სახელი"
-              name="first_name"
-            />
-            <input
-              class="registration-banner__input registration-banner__input--short"
-              type="text"
-              placeholder="მამის სახელი"
-              name="middle_name"
-            />
-            <input
-              class="registration-banner__input"
-              type="text"
-              placeholder="მომხმარებლის სახელი"
-              name="username"
-            />
-            <input
-              class="registration-banner__input"
-              type="text"
-              placeholder="პაროლი"
-              name="password"
-            />
-            <input
-              class="registration-banner__input"
-              type="number"
-              placeholder="ტელეფონი"
-              name="phone"
-            />
-            <input
-              class="registration-banner__input"
-              type="email"
-              placeholder="ელ.ფოსტა"
-              name="email"
-            />
+    <main class="registration-page">
+      <div class="container">
+        <form class="registration-form">
+          <h1 class="registration-form__title">რეგისტრაცია</h1>
+          <div class="registration-form__row">
+            <div class="registration-form__field">
+              <input type="text" placeholder="სახელი" required />
+            </div>
           </div>
-          <div class="registration-banner__input-code">
-            <input
-              class="registration-banner__input"
-              type="text"
-              placeholder="პირადი ნომერი"
-              name="captcha_input"
-            />
-            <input
-              class="registration-banner__input"
-              type="date"
-              placeholder="დაბადების თარიღი"
-              name="captcha_code"
-            />
+          <div class="registration-form__field">
+            <input type="text" placeholder="გვარი" required />
           </div>
-          <button class="registration-banner__btn" type="button">
+          <div class="registration-form__field">
+            <input type="text" placeholder="მომხმარებლის სახელი" required />
+          </div>
+
+          <div class="registration-form__field">
+            <input type="password" placeholder="პაროლი" required />
+          </div>
+
+          <div class="registration-form__field">
+            <input type="tel" placeholder="ტელეფონი" required />
+          </div>
+
+          <div class="registration-form__field">
+            <input type="email" placeholder="ელ.ფოსტა" required />
+          </div>
+
+          <div class="registration-form__row">
+            <div class="registration-form__field">
+              <input type="text" placeholder="პირადი ნომერი" required />
+            </div>
+            <div class="registration-form__field">
+              <input type="date" required />
+            </div>
+          </div>
+
+          <button type="submit" class="registration-form__btn">
             გაგრძელება
           </button>
-          <div class="registration-banner__bottom">
-            <input type="checkbox" name="terms_agreement" /><span
-              class="registration-banner__text"
-            >
-              თანახმა ვარ
-              <a href="#" class="registration-banner__link"
-                >პერსონალური მონაცემების</a
-              >
-              დამუშავებასა და გადაცემაზე
-            </span>
-          </div>
-        </div>
-        <a href="#" class="registration-banner__link"
-          >შესვლა კავკასიის ბანკი ბიზნეს-ონლაინში</a
-        >
+        </form>
       </div>
-
-      <div class="buisness-id-info">
-        <h2 class="buisness-id-info__header">
-          კავკასიის ბანკი ბიზნეს ID — ერთი ყველასთვის
-        </h2>
-        <ol class="buisness-id-info__list">
-          <li class="buisness-id-info__item">
-            ერთიანი ანგარიში კავკასიის ბანკის ჯგუფისა და მისი პარტნიორების მიერ
-            მოწოდებულ პროდუქტებთან და სერვისებთან მუშაობისთვის
-          </li>
-          <li class="buisness-id-info__item">
-            რამდენიმე პროდუქტთან ერთდროულად მუშაობის შესაძლებლობა, სისტემიდან
-            სისტემაში გადასვლის საჭიროების გარეშე
-          </li>
-          <li class="buisness-id-info__item">
-            თქვენი პერსონალური მონაცემების დაცვის გარანტია
-          </li>
-        </ol>
-      </div>
-    </section>
-    <footer class="footer">
-      <div class="footer__wrapper footer__wrapper--forgot-data">
-        <div class="footer__left">
-          <div class="footer__phone">
-            <span class="footer__logo-phone"> </span>
-            <a class="footer__link" href="tel:88001001189">8 800 100 11 89</a>
-          </div>
-          <div class="footer__tg-link">
-            <a class="footer__link" href="telegram.org/"
-              >მოგვწერეთ Telegram-ში</a
-            >
-          </div>
-          <span class="footer__text"
-            >© 2026 კავკასიის ბანკი (სს) ლიცენზირებული საქართველოს ეროვნული ბანკის მიერ</span
-          >
-          <span class="footer__text"
-            >პერსონალური მონაცემების დამუშავების პოლიტიკა</span
-          >
-        </div>
-        <div class="footer__right">
-          <div class="footer__theme">
-            <span class="footer__text">ნათელი თემა</span>
-          </div>
-        </div>
-      </div>
-    </footer>
+    </main>
   </body>
+  <script type="module" src="js/main.js"></script>
 </html>

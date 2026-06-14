@@ -1,20 +1,21 @@
 /* Global */
 /* ------------------------------------ */
-@import './global/_normalize';
-@import './global/_variables';
-@import './global/_mixins';
-@import './global/_reboot';
-@import './global/_fonts';
-@import './global/_container';
-@import './global/_visually-hidden';
+@import "./global/_normalize";
+@import "./global/_variables";
+@import "./global/_mixins";
+@import "./global/_reboot";
+@import "./global/_fonts";
+@import "./global/_container";
+@import "./global/_visually-hidden";
 
 /* Blocks */
 /* ------------------------------------ */
-@import './blocks/_header';
-@import './blocks/_categories';
-@import './blocks/_card-news';
-@import './blocks/_socials';
-@import './blocks/_articles';
-@import './blocks/_sidebar';
-@import './blocks/_pro-finance';
-@import './blocks/login';
+@import "./blocks/_header";
+@import "./blocks/_categories";
+@import "./blocks/_card-news";
+@import "./blocks/_socials";
+@import "./blocks/_articles";
+@import "./blocks/_sidebar";
+@import "./blocks/_pro-finance";
+@import "./blocks/login";
+@import "./blocks/registration";

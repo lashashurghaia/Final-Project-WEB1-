@@ -1,5 +1,5 @@
 .header {
-  background: linear-gradient(90deg, #415BD2 0%, #8DA1F7 100%);
+  background: linear-gradient(90deg, #415bd2 0%, #8da1f7 100%);
 
   &__top {
     padding: 12px 0;
@@ -57,7 +57,7 @@
     flex-shrink: 0;
     display: flex;
     align-items: center;
-    
+
     img {
       filter: brightness(0) invert(1);
     }
@@ -78,7 +78,7 @@
     padding: 12px 20px;
     border: none;
     border-radius: 8px;
-    background-color: #2B3143;
+    background-color: #2b3143;
     color: #ffffff;
     text-align: center;
     font-size: 13px;
